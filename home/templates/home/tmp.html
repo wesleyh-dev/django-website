@@ -1,0 +1,406 @@
+<!-- List all books from database in groups of four or one per line -->
+            <!-- <div class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                {% for book in books %}
+                <div class="col-sm">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="{{ book['cover_img'] }}" alt="book cover image">
+                        <div class="card-body">
+                            <h4 class="card-title">{{ book['title'] }}</h4>
+                            <p class="card-text">{{ book['author'] }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div> -->
+            <!---->
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/emory.jpg' %}"
+                        alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Bachelor of Science</h4>
+                        <!-- Text -->
+                        <p class="">Mathematics and Computer Science</p>
+                        <p class="card-text">2013 - 2018</p>
+                        <span class="badge badge-pill badge-default">Java</span>
+                        <span class="badge badge-pill badge-primary">C</span>
+                        <span class="badge badge-pill badge-secondary">Assembly</span>
+                        <span class="badge badge-pill badge-success">Python</span>
+                        <span class="badge badge-pill badge-light">SQL</span>
+                        <span class="badge badge-pill badge-danger">agile</span>
+                        <span class="badge badge-pill badge-warning">iOS</span>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        Emory University
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->
+
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/pc.jpg' %}"
+                        alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Education Volunteer</h4>
+                        <!-- Text -->
+                        <p class="">Tanzania</p>
+                        <p class="card-text">07/19 - 03/20</p>
+                        <span class="badge badge-pill badge-default">cooporation</span>
+                        <span class="badge badge-pill badge-primary">leadership</span>
+                        <span class="badge badge-pill badge-secondary">communication</span>
+                        <span class="badge badge-pill badge-success">time management</span>
+                        <span class="badge badge-pill badge-danger">responsibility</span>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        United States Peace Corps
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->                
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/bsh.jpg' %}"
+                        alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Network Architecture Consultant</h4>
+                        <!-- Text -->
+                        <p class="">Atlanta, Ga</p>
+                        <p class="card-text">2018 - 2019</p>     
+                        <span class="badge badge-pill badge-default">C#</span>
+                        <span class="badge badge-pill badge-primary">ASP.NET</span>
+                        <span class="badge badge-pill badge-secondary">Xamarin</span>
+                        <span class="badge badge-pill badge-success">Go</span>
+                        <span class="badge badge-pill badge-danger">bitcoind</span>
+                        <span class="badge badge-pill badge-warning">lnd</span>                                 
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        Blockchain Solutions Hawaii
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->                
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/ncr.jpeg' %}"
+                        alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Release Engineer Intern</h4>
+                        <!-- Text -->
+                        <p class="">Duluth, Ga</p>
+                        <p class="card-text">06/16 - 08/16</p>
+                        <span class="badge badge-pill badge-default">HTML</span>
+                        <span class="badge badge-pill badge-primary">CSS</span>
+                        <span class="badge badge-pill badge-secondary">Javascript</span>
+                        <span class="badge badge-pill badge-danger">agile</span>
+                        <span class="badge badge-pill badge-warning">waterfall</span>
+                        <span class="badge badge-pill badge-info">SharePoint</span>                                  
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        NCR
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->                
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/emory.jpg' %}" alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Technical Consultant and Co-author</h4>
+                        <!-- Text -->
+                        <p class="">Atlanta, Ga</p>
+                        <p class="card-text">2017</p>
+                        <span class="badge badge-pill badge-light">Visual Basic</span>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        Emory University
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->                
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/pbs.png' %}" alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Ambassador/ Canvasser</h4>
+                        <!-- Text -->
+                        <p class="">Atlanta, Ga</p>
+                        <p class="card-text">01/19 - 06/19</p>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        Georgia Public Broadcasting
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->                
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card Narrower -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade overlay">
+                        <img class="card-img-top" src="{% static 'images/exp/stem.jpg' %}"
+                        alt="Card image cap">
+                        <a>
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade">
+
+                        <!-- Title -->
+                        <h4 class="font-weight-bold card-title">Instructor & Assistant Instructor</h4>
+                        <!-- Text -->
+                        <p class="">Cobb, Ga</p>
+                        <p class="card-text">07/17 - 08/17</p>
+
+                    </div>
+
+                    <!-- Card footer -->
+                    <div class="card-footer text-center">
+                        Engineering for Kids
+                    </div>
+
+                </div>
+                <!-- Card Narrower -->                
+            </div>
+
+
+
+
+
+
+            <div class="col-sm pb-5">
+                <!-- Card -->
+                <div class="card card-cascade narrower">
+                    <!-- Card image -->
+                    <div class="view view-cascade gradient-card-header blue">                    
+                        <!-- Title -->
+                        <h2 class="card-header-title">My personal blog</h2>
+                        <!-- Subtitle -->                   
+                    </div>                    
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">                    
+                        <!-- Text -->
+                        <p class="card-text text-left p-3">
+                            Let's dive into some topics that I feel the need to share with world. My blog explores anything from web framework trends, to reviews of some of my favorite books. No politics allowed!
+                        </p>
+                        <a href="blog" target="_blank" class="btn btn-primary">Under construction!</a>                   
+                    </div>                    
+                </div>
+                <!-- Card -->   
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade gradient-card-header teal">
+                
+                        <!-- Title -->
+                        <h2 class="card-header-title">LegUp</h2>
+                        <!-- Subtitle -->
+                
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+                
+                        <!-- Text -->
+                        <p class="card-text text-left p-3">
+                            A native iOS app with AWS No-SQL backend and custom API for identifying and contacting your federal and state representatives via phone, and fax. You can also view legislation through the app and voice your opinion to your elected officials. I developed this app as the Product Owner with four other students for CS370 Computer Science Practicum. Our product was awarded 2nd place out of seven!
+                        </p>
+                        <a href="https://github.com/wesleyh-dev/LegUp" target="_blank" class="btn btn-primary">Github</a>
+
+                    </div>
+                
+                </div>
+                <!-- Card -->   
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade gradient-card-header secondary-color">
+                
+                        <!-- Title -->
+                        <h2 class="card-header-title">Blocksplora</h2>
+                        <!-- Subtitle -->
+                
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+                
+                        <!-- Text -->
+                        <p class="card-text text-left p-3">
+                            Search the entire history of the bitcoin mainnet blockchain! This project utilizes some python JSON-RPC packages that facilitate communication with a bitcoin full node. The node is running on a Raspberry Pi 3 Model B!
+                        </p>
+                        <a class="btn btn-primary">Coming soon!</a>
+                
+                    </div>
+                
+                </div>
+                <!-- Card -->   
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade gradient-card-header elegant-color">
+                
+                        <!-- Title -->
+                        <h2 class="card-header-title">This website!</h2>
+                        <!-- Subtitle -->
+                
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+                
+                        <!-- Text -->
+                        <p class="card-text text-left p-3">
+                            I spent weeks playing around with different web frameworks, front-end frameworks, etc. but I finally landed on Python Django for my backend and Apache for serving. I experimented with Node, Flask, ASP.NET MVC and Razor Pages, with their associated libraries and extensions for database management and authn/authr. In each case, I built virtually the same thing: a single page app, databases for books and blog posts, and a blog app. In the end I deployed a robust and secure Django backend which presents this beautiful website you see here. I hope you like it!
+                        </p>
+
+                    </div>
+                
+                </div>
+                <!-- Card -->   
+            </div>
+
+            <div class="col-sm pb-5">
+                <!-- Card -->
+                <div class="card card-cascade narrower">
+
+                    <!-- Card image -->
+                    <div class="view view-cascade gradient-card-header red">
+                
+                        <!-- Title -->
+                        <h2 class="card-header-title">The Lone Red Mage.exe</h2>
+                        <!-- Subtitle -->
+                
+                    </div>
+                
+                    <!-- Card content -->
+                    <div class="card-body card-body-cascade text-center">
+                
+                        <!-- Text -->
+                        <p class="card-text text-left p-3">
+                            I developed this native Windows game to demonstrate the capabilities of the video game development software that I taught to students during my time at Engineering for Kids. It was a big hit with my students and I am very proud of the product. Check out the Github, clone it and give it a try!
+                        </p>
+                        <a class="btn btn-primary" href="https://github.com/wesleyh-dev/The-Lone-Red-Mage" target="_blank">github</a>
+                    </div>
+                
+                </div>
+                <!-- Card -->   
+            </div>

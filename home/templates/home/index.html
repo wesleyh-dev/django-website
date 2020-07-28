@@ -1,0 +1,260 @@
+{% extends 'home/base.html' %}
+
+{% block content %}
+{% load static %}
+
+<header id="home"> 
+    <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar transparent">
+        <div class="container">
+            <a class="navbar-brand px-1" href="">
+                <img src="{% static 'favicon.ico' %}" width="25" height="25" class="align-center mx-1">
+                <strong>wesleyh.net</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">projects</a>
+                    </li> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#books">books</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="#social">contact</a>
+                    </li>                
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">
+                            <i class="fab fa-blogger"></i>
+                            visit my blog
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="view bg z-depth-1">
+        <div class="full-bg-img">
+            <div class="mask rgba-black-light flex-center">
+                <div class="container white-text wow fadeInUp text-center">
+                    <img src="{% static 'images/profile/landing-prof.jpg' %}" class="rounded-circle z-depth-1 m-auto" style="width: 45%;">
+                    <h1 class="display-3 my-4">Hello World!</h1>
+                    <h1 class="h1-responsive">My name is Wesley.</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<br>
+
+<main>
+
+    <!--Section: about-->
+    <section id="about" class="py-5 z-depth-2">
+
+        <!-- Container -->
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center">About Me</h2>
+            <!-- Section description -->
+            <hr class="pb-4">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-lg-8">
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-1">
+                            <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-xl-10 col-md-11 col-10 text-left">
+                            <p class="">My passion for computer science began when I took an introductory CS course during my junior year of college at the suggestion of my roommate. I didn't know what I was getting into at the time, but this course, along with deeply inspiring and passionate professors, sparked a flame that has persisted my entire life. Since then, I earned my Bachelor of Science in Mathematics and Computer Science from Emory University in 2018. With this strong, technical background, I am more than capable of adapting to an ever-expanding technology landscape.</p>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row">
+
+                        <!-- Grid column -->
+                        <div class="col-1">
+                            <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-xl-10 col-md-11 col-10 text-left">
+                            <p class="">I have worked as an engineer, developer, designer, leader, and even a chef. I love to build things, break things, and learn new things whenever the opportunity presents itself. I love to read about a diverse range of subjects, from applied cryptography to the history of ancient Central American civilizations. I especially love a fresh installation of Linux. For me, it's like taking a breath of fresh morning air.</p>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+                    <!-- Grid row -->
+                    <div class="row pb-3">
+
+                        <!-- Grid column -->
+                        <div class="col-1">
+                            <i class="fa fa-mail-forward fa-lg purple-text"></i>
+                        </div>
+                        <!-- Grid column -->
+
+                        <!-- Grid column -->
+                        <div class="col-xl-10 col-md-11 col-10 text-left">
+                            <p class="">I have traveled to nearly twenty countries across four continents starting at age 11. My unique exposure to the needs of a diverse range of demographics enables me to effectively assess how a given technology or service can impact the widest audience. It is with this broad range of experiences and knowledge that I am driven to a life serving the public with the aid of innovation, discovery, and, hopefully, bitcoin. My vision of the future is one where everyone has the ability to own their own digital identity and their own digital bank vault, securely.</p>
+                        </div>
+                        <!-- Grid column -->
+
+                    </div>
+                    <!-- Grid row -->
+
+
+                </div>
+                <!--Grid column-->
+
+                <!-- Grid column -->
+                <div class="col-lg-4 w-50 m-auto">
+                    <img class="img-fluid z-depth-2 rounded" src="{% static 'images/profile/about-me.jpg' %}">
+                </div>
+                <!-- Grid column -->
+
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Container -->
+
+    </section>
+    <!--Section: about-->
+
+    <br>
+
+    <section id="experience" class="py-5 z-depth-2">
+        <div class="container">
+
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center">
+                Professional Life                
+            </h2>
+            <div class="text-center">
+                <a href="{% static 'downloads/resume.pdf' %}" target="_blank" >
+                    <button download="downloads/resume.pdf" type="button" class="btn btn-primary btn-rounded">
+                        <i class="fas fa-file-download pr-3"></i>
+                        View or download resume
+                    </button>
+                </a>
+            </div>
+
+            <hr class="pb-4">
+
+            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                {% for job in jobs %}
+                <div class="col-sm pb-5">
+                    <div class="card card-cascade narrower">
+                        <div class="view view-cascade overlay">
+                            <img class="card-img-top" src="{{ job.image.url }}" alt="">
+                        </div>
+                        <div class="card-body card-body-cascade">
+                            <h4 class="font-weight-bold card-title">{{ job.position }}</h4>
+                            <p class="card-text">{{ job.date }}</p>
+                            <span class="card-text">Tags: </span>
+                            <span class="card-text">{{ job.badges }}</span>
+                        </div>
+                        <div class="card-footer text-center">
+                            {{ job.employer }}
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </section>
+
+    <br>
+
+    <section id="projects" class="py-5 z-depth-2">
+        <div class="container">
+
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center">Project Portfolio</h2>
+            <!-- Section description -->
+            <hr class="pb-4">
+
+            <div class="row row-cols-sm-2 row-cols-lg-3 row-cols-md-2">
+                {% for project in projects %}
+                <div class="col-sm pb-5">
+                    <div class="card card-cascade narrower">
+                        <div class="view view-cascade gradient-card-header mdb-color">
+                            <h2 class="card-header-title">{{ project.title }}</h2>
+                        </div>
+                        <div class="card-body card-body-cascade text-center">
+                            <p class="card-text text-left p-3">{{ project.decription }}</p>
+                            <a href="{{ project.button_link }}" class="btn btn-primary btn-rounded">{{ project.button_title }}</a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+    <br>
+
+    <section id="books" class="py-5 z-depth-2">
+        <div class="container">
+            <!-- Section heading -->
+            <h2 class="h1-responsive font-weight-bold text-center">Recommended Reading</h2>
+            <!-- Section description -->
+            <p class="text-center card-text">Built with SQLite!</p>
+            <hr class="py-3">
+            
+            <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+                {% for book in books %}
+                <div class="col-sm">
+                    <div class="card card-cascade narrower mb-3">
+                        <div class="view view-cascade">
+                            <img src="{{ book.cover.url }}" alt="" class="card-img-top">
+                        </div>
+                        
+                        <div class="card-body card-body-cascade">
+                            <h5 class="card-title">{{ book.title }}</h5>
+                            <p class="card-text">by {{ book.author }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<br>
+
+{% endblock content %}
