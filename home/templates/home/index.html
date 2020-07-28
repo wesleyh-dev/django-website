@@ -38,7 +38,7 @@
                     <li class="nav-item">
                         <a href="" class="nav-link">
                             <i class="fab fa-blogger"></i>
-                            visit my blog
+                            blog
                         </a>
                     </li>
                 </ul>
@@ -49,9 +49,9 @@
         <div class="full-bg-img">
             <div class="mask rgba-black-light flex-center">
                 <div class="container white-text wow fadeInUp text-center">
-                    <img src="{% static 'images/profile/landing-prof.jpg' %}" class="rounded-circle z-depth-1 m-auto" style="width: 45%;">
+                    <img src="{% static 'images/profile/landing-prof.jpg' %}" class="rounded-circle z-depth-1 m-auto" style="width: 35%;">
                     <h1 class="display-3 my-4">Hello World!</h1>
-                    <h1 class="h1-responsive">My name is Wesley.</h1>
+                    <h1 class="h1-responsive">Welcome to the home page of Wesley H.</h1>
                 </div>
             </div>
         </div>
@@ -138,7 +138,7 @@
 
                 <!-- Grid column -->
                 <div class="col-lg-4 w-50 m-auto">
-                    <img class="img-fluid z-depth-2 rounded" src="{% static 'images/profile/about-me.jpg' %}">
+                    <img class="img-fluid z-depth-2 rounded-circle" src="{% static 'images/profile/about-me.jpg' %}">
                 </div>
                 <!-- Grid column -->
 
@@ -181,6 +181,7 @@
                         </div>
                         <div class="card-body card-body-cascade">
                             <h4 class="font-weight-bold card-title">{{ job.position }}</h4>
+                            <p class="card-text mb-0">{{ job.location }}</p>
                             <p class="card-text">{{ job.date }}</p>
                             <span class="card-text">Tags: </span>
                             <span class="card-text">{{ job.badges }}</span>
@@ -206,7 +207,7 @@
             <!-- Section description -->
             <hr class="pb-4">
 
-            <div class="row row-cols-sm-2 row-cols-lg-3 row-cols-md-2">
+            <div class="row row-cols-sm-2 row-cols-lg-2 row-cols-md-2">
                 {% for project in projects %}
                 <div class="col-sm pb-5">
                     <div class="card card-cascade narrower">
