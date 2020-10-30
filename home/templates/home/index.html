@@ -1,5 +1,7 @@
 {% extends 'home/base.html' %}
 
+{% block title %}Home{% endblock title %}
+
 {% block content %}
 {% load static %}
 
@@ -7,7 +9,7 @@
 <header id="home"> 
     <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar transparent">
         <div class="container">
-            <a class="navbar-brand px-1" href="">
+            <a class="navbar-brand px-1" href="{% url 'home' %}">
                 <img src="{% static 'favicon.ico' %}" width="25" height="25" class="align-center mx-1">
                 <strong>wesleyh.net</strong>
             </a>
@@ -35,14 +37,16 @@
                         <a class="nav-link" href="#social">contact</a>
                     </li>                
                 </ul>
+                <!--                 
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link">
+                        <a href="{% url 'blog' %}" class="nav-link">
                             <i class="fab fa-blogger"></i>
-                            blog
+                            visit my blog
                         </a>
                     </li>
                 </ul>
+                -->            
             </div>
         </div>
     </nav>
@@ -52,8 +56,8 @@
                 <div class="container white-text wow fadeInUp text-center">
                     <img src="{% static 'images/profile/landing-prof.jpg' %}" class="rounded-circle z-depth-1 m-auto" style="width: 35%;">
                     <h1 class="display-3 my-4">Hello World!</h1>
-                    <h1 class="h1-responsive">Welcome to my digital portfolio.</h1>
-                    <p class="">Built with Django, SQLite, Apache, a Raspberry Pi, and SSL.</p>
+                    <h1 class="h1-responsive">Welcome my digital portfolio.</h1>
+                    <p class="">Built with Python Django, SQLite, Apache, a Raspberry Pi, and some TLS magic.</p>
                 </div>
             </div>
         </div>
@@ -70,7 +74,7 @@
         <!-- Container -->
         <div class="container">
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center">About Me</h2>
+            <h1 class="display-4 text-center">Who Am I?</h1>
             <!-- Section description -->
             <hr class="pb-4">
 
@@ -160,12 +164,12 @@
         <div class="container">
 
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center">
-                Professional Life                
-            </h2>
+            <h1 class="display-4 text-center">
+                What Have I Done?                
+            </h1>
             <div class="text-center">
                 <a href="{% static 'downloads/resume.pdf' %}" target="_blank" >
-                    <button download="downloads/resume.pdf" type="button" class="btn btn-primary btn-rounded">
+                    <button download="downloads/resume.pdf" type="button" class="btn btn-mdb-color btn-rounded">
                         <i class="fas fa-file-download pr-3"></i>
                         View or download resume
                     </button>
@@ -174,15 +178,16 @@
 
             <hr class="pb-4">
 
-            <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+            <div class="grid">
+                <div class="grid-sizer"></div>
                 {% for job in jobs %}
-                <div class="col-sm pb-5">
-                    <div class="card card-cascade narrower">
+                <div class="grid-item p-2">
+                    <div class="card card-cascade">
                         <div class="view view-cascade overlay">
                             <img class="card-img-top" src="{{ job.image.url }}" alt="">
                         </div>
                         <div class="card-body card-body-cascade">
-                            <h4 class="font-weight-bold card-title">{{ job.position }}</h4>
+                            <h4 class="card-title">{{ job.position }}</h4>
                             <p class="card-text mb-0">{{ job.location }}</p>
                             <p class="card-text">{{ job.date }}</p>
                             <span class="card-text">Tags: </span>
@@ -205,25 +210,30 @@
         <div class="container">
 
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center">Project Portfolio</h2>
+            <h1 class="display-4 text-center">What Are My Products?</h1>
             <!-- Section description -->
             <hr class="pb-4">
 
-            <div class="row row-cols-sm-2 row-cols-lg-2 row-cols-md-2">
+            <div class="grid">
+                <div class="grid-sizer"></div>
                 {% for project in projects %}
-                <div class="col-sm pb-5">
-                    <div class="card card-cascade narrower">
-                        <div class="view view-cascade gradient-card-header mdb-color">
-                            <h2 class="card-header-title">{{ project.title }}</h2>
+                <div class="grid-item p-2">
+                    <div class="card card-cascade">
+
+                        <div class="view view-cascade gradient-card-header warm-flame-gradient">
+                            <h2 class="card-title text-white">{{ project.title }}</h2>
+                            <p class="card-header-subtitle mb-0">{{ project.project_type }}</p>
                         </div>
                         <div class="card-body card-body-cascade text-center">
                             <p class="card-text text-left p-3">{{ project.decription }}</p>
-                            <a href="{{ project.button_link }}" class="btn btn-primary btn-rounded">{{ project.button_title }}</a>
+                            <a href="{{ project.button_link }}" class="btn btn-mdb-color btn-rounded">{{ project.button_title }}</a>
                         </div>
+
                     </div>
                 </div>
                 {% endfor %}
             </div>
+
         </div>
     </section>
 
@@ -232,15 +242,37 @@
     <section id="books" class="py-5 z-depth-2">
         <div class="container">
             <!-- Section heading -->
-            <h2 class="h1-responsive font-weight-bold text-center">Recommended Reading</h2>
+            <h1 class="display-4 text-center">What Should You Read?</h1>
             <!-- Section description -->
-            <p class="text-center card-text">Built with SQLite!</p>
-            <hr class="py-3">
-            
-            <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3 row-cols-sm-2">
+            <p class="text-center card-text">These are all books that I have read and return to often.</p>
+            <!-- <hr class="py-3"> -->
+
+
+            <div class="table-responsive pt-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                          <th>Cover</th>
+                          <th class="th-lg">Title & Author</th>
+                          <th>Rating</th>
+                        </tr>
+                    </thead>
+                    {% for book in books %}
+                        <tr class="">
+                            <td><img src="{{ book.cover.url }}" alt="" class="img-fluid" style="width: 75%;"></td>
+                            <td><h5 class="h2-responsive card-title">{{ book.title }}</h5><p class="card-text">{{ book.author }}</td>
+                            <td><span class="d-flex"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span></td>
+                        </tr>
+                    {% endfor %}
+                </table>
+            </div>
+
+     
+<!--             <div class="grid">
+                <div class="grid-sizer"></div>
                 {% for book in books %}
-                <div class="col-sm">
-                    <div class="card card-cascade narrower mb-3">
+                <div class="grid-item p-2">
+                    <div class="card card-cascade narrower">
                         <div class="view view-cascade">
                             <img src="{{ book.cover.url }}" alt="" class="card-img-top">
                         </div>
@@ -253,6 +285,7 @@
                 </div>
                 {% endfor %}
             </div>
+ -->
         </div>
     </section>
 

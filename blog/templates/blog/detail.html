@@ -1,0 +1,61 @@
+{% extends 'home/base.html' %}
+
+{% block title %}Blog{% endblock title %}
+
+{% block content %}
+{% load static %}
+
+<nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar transparent">
+    <div class="container">
+        <a class="navbar-brand px-1" href="{% url 'home' %}">
+            <img src="{% static 'favicon.ico' %}" width="25" height="25" class="align-center mx-1">
+            <strong>wesleyh.net</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="{% url 'blog' %}" class="nav-link">
+                        <i class="fas fa-arrow-left"></i>
+                        back
+                    </a>
+                </li>         
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="view blog-detail-bg z-depth-1">
+    <div class="mask rgba-black-light flex-center">
+        <div class="container white-text wow fadeInUp text-center">
+            <h1 class="display-4 my-4">{{ post.title }}</h1>
+            <p>Post number {{ post.id }}</p>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<main>
+    <section class="py-5">
+        <div class="container">
+            <div class="row row-col-0 align-items-top">
+                <div class="col-auto">
+                    <img class="rounded-circle z-depth-1 mb-3" src="{% static 'images/profile/about-me.jpg' %}" style="width: 100px;">
+                </div>
+                <div class="col text-left">
+                    <h1 class="h2-responsive">By Wesley H.</h1>
+                    <h1 class="h5-responsive">Created {{ post.post_date }}</h1>
+                    <hr class="">
+                </div>
+            </div>
+            <br>
+            <p>{{ post.body|safe }}</p>
+        </div>
+    </section>
+    <br>
+</main>
+
+
+{% endblock content %}

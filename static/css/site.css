@@ -96,6 +96,11 @@ header,
   height: 100%;
 }
 
+
+.view-half {
+  height: 50vh;
+}
+
 .btc-ic{color:#fff !important}
 
 .img-fluid-custom {
@@ -108,9 +113,22 @@ header,
 
 .blog-bg { 
   /* The image used */
-  background-image: url('../images/bg/landing-bg.jpg');
+  background-image: url('../images/bg/blog-bg.JPG');
 
-  /* Full height */
+  /* half height */
+  height: 50%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-detail-bg { 
+  /* The image used */
+  background-image: url('../images/bg/blog-detail-bg.jpg');
+
+  /* half height */
   height: 50%; 
 
   /* Center and scale the image nicely */
@@ -126,4 +144,81 @@ header,
 hr {
   border-width: 2px;
 }
+
+
+
+* { box-sizing: border-box; }
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+  width: 33.333%;
+}
+@media (max-width: 575px) {
+  .grid-sizer,
+  .grid-item {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+}
+
+/* To change the amount of columns on larger devices, uncomment the code below */
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .grid-sizer,
+  .grid-item {
+    width: 50%;
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+@media (min-width: 1200px) {
+  .grid-sizer,
+  .grid-item {
+    width: 33.333%;
+  }
+}
+.grid-item {
+  float: left;
+}
+
+.grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+.socialside {
+  position: fixed;
+  top: 30%;
+  left: 0%;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 575px) {
+  .socialside {
+    display: none;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  .socialside {
+    display: none;
+  }
+}
+
 

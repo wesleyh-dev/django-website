@@ -3,3 +3,4 @@ media
 venv
 __pycache__
 appconf/settings.py
+.vscode

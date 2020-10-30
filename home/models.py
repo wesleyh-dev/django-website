@@ -22,6 +22,7 @@ class Job(models.Model):
 
 class Project(models.Model):
     title = models.CharField(max_length=50)
+    project_type = models.CharField(max_length=75)
     decription = models.TextField(default=None)
     button_title = models.CharField(max_length=30)
     button_link = models.URLField()
