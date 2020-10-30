@@ -1,9 +1,4 @@
-﻿// Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-// for details on configuring this project to bundle and minify static web assets.
-
-// Write your JavaScript code.
-
-$(document).ready(function(){
+﻿$(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -39,3 +34,21 @@ $(window).scroll(function() {
     $(".navbar").removeClass("top-nav-collapse");
   }
 });
+
+// Data Picker Initialization
+$('.datepicker').datepicker({
+  format: 'mmmm, yyyy'
+});
+
+// init Masonry
+var $grid = $('.grid').masonry({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  columnWidth: '.grid-sizer'
+});
+
+// layout Masonry after each image loads
+$grid.imagesLoaded().progress( function() {
+  $grid.masonry();
+});
+
