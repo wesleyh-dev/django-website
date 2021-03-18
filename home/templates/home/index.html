@@ -57,7 +57,6 @@
                     <img src="{% static 'images/profile/landing-prof.jpg' %}" class="rounded-circle z-depth-1 m-auto" style="width: 35%;">
                     <h1 class="display-3 my-4">Hello World!</h1>
                     <h1 class="h1-responsive">Welcome to my digital portfolio.</h1>
-                    <p class="">Built with Linux, Apache, SQLite, and Python. Hosted on a Raspberry Pi.</p>
                 </div>
             </div>
         </div>
@@ -78,80 +77,11 @@
             <!-- Section description -->
             <hr class="pb-4">
 
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-lg-8">
-
-                    <!-- Grid row -->
-                    <div class="row">
-
-                        <!-- Grid column -->
-                        <div class="col-1">
-                            <i class="fa fa-mail-forward fa-lg purple-text"></i>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-xl-10 col-md-11 col-10 text-left">
-                            <p><strong>My name is Wes and I create code, content, and craft for continued cooperation among coalitions of community.</strong> My passion for computer science began when I took an introductory CS course during my junior year of college at the suggestion of my roommate. I didn't know what I was getting into at the time, but this course, along with deeply inspiring and passionate professors, sparked a flame that has persisted my entire life. Since then, I earned my Bachelor of Science in Mathematics and Computer Science from Emory University in 2018. With this strong, technical background, I am more than capable of adapting to an ever-expanding technology landscape.</p>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-                    <!-- Grid row -->
-                    <div class="row">
-
-                        <!-- Grid column -->
-                        <div class="col-1">
-                            <i class="fa fa-mail-forward fa-lg purple-text"></i>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-xl-10 col-md-11 col-10 text-left">
-                            <p class="">I have worked as an engineer, developer, designer, leader, teacher, and even a chef. I love to build things, break things, and learn new things whenever the opportunity presents itself. I love to read about a diverse range of subjects, from applied cryptography to the history of ancient Central American civilizations. I especially love a fresh installation of Linux. For me, it's like taking a breath of fresh morning air.</p>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-                    <!-- Grid row -->
-                    <div class="row pb-3">
-
-                        <!-- Grid column -->
-                        <div class="col-1">
-                            <i class="fa fa-mail-forward fa-lg purple-text"></i>
-                        </div>
-                        <!-- Grid column -->
-
-                        <!-- Grid column -->
-                        <div class="col-xl-10 col-md-11 col-10 text-left">
-                            <p class="">I have traveled to nearly twenty countries across four continents starting at age 11. My unique exposure to the needs of a diverse range of demographics enables me to effectively assess how a given technology or service can impact the widest audience. It is with this broad range of experiences and knowledge that I am driven to a life serving the public with the aid of innovation, discovery, and, hopefully, bitcoin. My vision of the future is one where everyone has the ability to own their own digital identity and their own digital bank vault, securely.</p>
-                        </div>
-                        <!-- Grid column -->
-
-                    </div>
-                    <!-- Grid row -->
-
-
-                </div>
-                <!--Grid column-->
-
-                <!-- Grid column -->
-                <div class="col-lg-4 w-50 m-auto">
-                    <img class="img-fluid z-depth-2 rounded-circle" src="{% static 'images/profile/about-me.jpg' %}">
-                </div>
-                <!-- Grid column -->
-
-
-            </div>
-            <!-- Grid row -->
-
+            <h2 class="display-5 p-4">
+                <p><strong>My name is Wes. I like to create code, content, and craft in cooperation with communities and coalitions centered on progress.</strong></p>
+                <p class="py-4">I love to build things, break things, and learn new things whenever the opportunity presents itself. I have been to nearly twenty countries throughout my life and look forward to seeing more.</p>
+                <p class="">My vision of the future is one where everyone has access and ability to own their own digital identity and their own digital bank vault. We can build that future with <a class="" href="https://bitcoin.org" target="_blank" style="color: #ff0000">Bitcoin</a> and the <a class="" href="https://lightning.network/" target="_blank" style="color: #ff0000">Lightning Network</a>.</p>
+            </h2>
         </div>
         <!-- Container -->
 
@@ -167,14 +97,6 @@
             <h1 class="display-4 text-center">
                 What Have I Done?                
             </h1>
-            <div class="text-center">
-                <a href="{% static 'downloads/resume.pdf' %}" target="_blank" >
-                    <button download="downloads/resume.pdf" type="button" class="btn btn-mdb-color btn-rounded">
-                        <i class="fas fa-file-download pr-3"></i>
-                        View or download resume
-                    </button>
-                </a>
-            </div>
 
             <hr class="pb-4">
 
@@ -189,9 +111,9 @@
                         <div class="card-body card-body-cascade">
                             <h4 class="card-title">{{ job.position }}</h4>
                             <p class="card-text mb-0">{{ job.location }}</p>
-                            <p class="card-text">{{ job.date }}</p>
+                            <!-- <p class="card-text">{{ job.date }}</p>
                             <span class="card-text">Tags: </span>
-                            <span class="card-text">{{ job.badges }}</span>
+                            <span class="card-text">{{ job.badges }}</span> -->
                         </div>
                         <div class="card-footer text-center">
                             {{ job.employer }}
@@ -244,7 +166,7 @@
             <!-- Section heading -->
             <h1 class="display-4 text-center">What Should You Read?</h1>
             <!-- Section description -->
-            <p class="text-center card-text">These are all books that I have read and return to often.</p>
+            <p class="text-center card-text">My first recommendation is the <a class="" href="https://bitcoin.org/bitcoin.pdf" target="_blank" style="color: #ff0000">Bitcoin white paper by Satoshi Nakamoto</a>.</p>
             <!-- <hr class="py-3"> -->
 
 
