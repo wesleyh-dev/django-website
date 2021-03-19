@@ -1,6 +1,6 @@
 {% extends 'home/base.html' %}
 
-{% block title %}Blog{% endblock title %}
+{% block title %}Blog | Post {{ post.id }}{% endblock title %}
 
 {% block content %}
 {% load static %}
@@ -30,7 +30,6 @@
     <div class="mask rgba-black-light flex-center">
         <div class="container white-text wow fadeInUp text-center">
             <h1 class="display-4 my-4">{{ post.title }}</h1>
-            <p>Post number {{ post.id }}</p>
         </div>
     </div>
 </div>
